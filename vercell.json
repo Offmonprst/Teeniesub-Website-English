@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "src": "^/Episode(/.*)?$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/404.html",
+      "status": 404
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "gallery": [
+    {
+      "episode": 1,
+      "title": "Berangkat! kereta pertemuan para putri",
+      "image": "https://files.catbox.moe/xeacq7.png",
+      "date": "30 Oktober 2025",
+      "url": "/Episode/Berangkat-kereta-pertemuan-para-putri"
+    },
+    {
+      "episode": 2,
+      "title": "Siapa yang ada di cermin itu?",
+      "image": "https://files.catbox.moe/6bdpob.png",
+      "date": "6 November 2025",
+      "url": "/Episode/Siapa-yang-ada-di-cermin-itu"
+    },
+    {
+      "episode": 3,
+      "title": "Scrubping itu Scrub scrub scrub",
+      "image": "https://files.catbox.moe/lccklq.png",
+      "date": "13 November 2025",
+      "url": "/Episode/Scrubping-itu-scrub-scrub-scrub"
+    },
+    {
+      "episode": 4,
+      "title": "Aku Akan Membantumu Menemukan Pesonamu, Charmingping",
+      "image": "https://files.catbox.moe/g0cw60.png",
+      "date": "20 November 2025",
+      "url": "/Episode/Aku-Akan-Membantumu-Menemukan-Pesonamu-Charmingping"
+    },
+    {
+      "episode": 5,
+      "title": "Berikan aku sayap, Flitterping",
+      "image": "https://files.catbox.moe/e78dck.png",
+      "date": "27 November 2025",
+      "url": "/Episode/Berikan-aku-sayap-flitterping"
+    },
+    {
+      "episode": 6,
+      "title": "SilkPing dan karpet ajaib",
+      "image": "https://files.catbox.moe/exi3bp.jpg",
+      "date": "4 Desember 2025",
+      "url": "/Episode/SilkPing-dan-karpet-ajaib"
+    },
+    {
+      "episode": 7,
+      "title": "Trio Musketeers Teenieping",
+      "image": "https://files.catbox.moe/ev72c6.jpg",
+      "date": "11 Desember 2025",
+      "url": "/Episode/Trio-musketeers-teenieping"
+	},
+    {
+      "episode": 8,
+      "title": "Dingin dan Membeku, Snowping",
+      "image": "https://files.catbox.moe/cvuzu2.jpg",
+      "date": "18 Desember 2025",
+      "url": "/Episode/Dingin-dan-membeku-snowping"
+	},
+    {
+      "episode": 9,
+      "title": "Serahkan urusan menjahit kepada Claireping",
+      "image": "https://files.catbox.moe/d4s59b.jpg",
+      "date": "25 Desember 2025",
+      "url": "/Episode/Serahkan-urusan-menjahit-kepada-claireping"
+    },
+    {
+      "episode": 10,
+      "title": "Operasi mata mata",
+      "image": "https://files.catbox.moe/52m7m3.jpg",
+      "date": "1 Januari 2026",
+      "url": "/Episode/Operasi-mata-mata"
+    },
+    {
+      "episode": 11,
+      "title": "Setetes Embun dari Dewping",
+      "image": "https://files.cloudkuimages.guru/images/fe235402cd45.png",
+      "date": "8 Januari 2026",
+      "url": "/Episode/Setetes-eembun-dari-dewping"
+    }
+  ]
+}

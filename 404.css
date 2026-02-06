@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --blue-main: #4da6ff;
+    --blue-soft: #eaf4ff;
+    --blue-glow: rgba(77, 166, 255, 0.55);
+    --blue-glow-soft: rgba(77, 166, 255, 0.25);
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* ================= BUBBLE BACKGROUND (BLUE) ================= */
+.bubble-bg .bubble {
+    position: absolute;
+    background: var(--blue-glow-soft);
+    border-radius: 50%;
+    animation: floatUp 10s infinite ease-in;
+}
+
+.bubble {
+    width: 40px;
+    height: 40px;
+    bottom: -80px;
+    left: 20%;
+}
+
+.bubble:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 60%;
+    animation-duration: 14s;
+}
+
+.bubble:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    left: 80%;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 40%;
+    animation-duration: 11s;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: .6; }
+    100% { transform: translateY(-800px); opacity: 0; }
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 70px;
+    color: var(--blue-main);
+}
+
+/* ================= CHARACTER ================= */
+.character-png {
+    width: 220px;
+    margin: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+.character-png img {
+    width: 100%;
+    display: block;
+    filter: drop-shadow(0 0 12px var(--blue-glow));
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* ================= TEXT ================= */
+h1 {
+    font-size: 85px;
+    margin: 15px 0 10px;
+    font-weight: 700;
+    color: var(--blue-main);
+}
+
+p {
+    font-size: 18px;
+    opacity: 0.9;
+    color: var(--blue-main);
+}
+
+/* ================= BUTTON ================= */
+.btn-back {
+    margin-top: 20px;
+    display: inline-block;
+    background: var(--blue-main);
+    padding: 12px 28px;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background: #78baff; /* biru lebih terang */
+    transform: scale(1.05);
+}
