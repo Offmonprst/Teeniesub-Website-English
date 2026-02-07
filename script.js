@@ -76,7 +76,7 @@ searchInput.addEventListener("input", () => {
 
 // ================= FETCH EPISODE JSON =================
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("/Episode.json") // ⬅️ PENTING
+    fetch("/Episode.json")
         .then(res => {
             if (!res.ok) {
                 throw new Error("Episode.json not Found");
