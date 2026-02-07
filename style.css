@@ -253,9 +253,12 @@ header {
     margin-bottom: 12px;
 }
 
-.teeniesubs,
+.teeniesubs {
+	color: var(--blue-main);
+    opacity: 0;
+}
 .indo {
-    color: var(--blue-main);
+    color: #006AFF;
     opacity: 0;
 }
 
