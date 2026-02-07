@@ -76,7 +76,7 @@ searchInput.addEventListener("input", () => {
 
 // ================= FETCH EPISODE JSON =================
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("https://eng.teeniesubs.xyz/Episode.json")
+    fetch("https://teeniesub-eng.vercel.app/Episode.json")
         .then(res => {
             if (!res.ok) {
                 throw new Error("Episode.json not Found");
