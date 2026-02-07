@@ -1,5 +1,12 @@
 {
   "gallery": [
-    {}
+    {
+    "episode": 1,
+    "title": "The Girl Who Came Upon a Star",
+    "image": "https://files.catbox.moe/ntg08a.jpg",
+    "date": "10 October 2024",
+    "url": "/Episode/The-girl-who-came-upon-a-star",
+    "series": "Star Catch! Teenieping"
+    }
   ]
 }
