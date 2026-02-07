@@ -43,10 +43,10 @@ function renderGallery(data) {
     let html = "";
     data.forEach(item => {
         html += `
-        <a href="https://indo.teeniesubs.xyz${item.url}" class="photo-card">
+        <a href="https://eng.teeniesubs.xyz${item.url}" class="photo-card">
             <img src="${item.image}" alt="Episodes ${item.episode}">
             <h3>Eps: ${item.episode} || ${item.title}</h3>
-            <p>${item.date}</p>
+            <p>${item.series} ~ ${item.date}</p>
         </a>
         `;
     });
