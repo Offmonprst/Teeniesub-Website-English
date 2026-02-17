@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Preparing Download...</title>
+    <style>
+        body { font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #fff0f5; color: #ff69b4; }
+        .loader { border: 5px solid #f3f3f3; border-top: 5px solid #ff69b4; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <p>Starting your download...</p>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const fileId = urlParams.get('id');
+        if (fileId) {
+            window.location.replace(`https://drive.google.com/uc?export=download&id=${fileId}`);
+        } else {
+            document.body.innerHTML = "No File ID found.";
+        }
+    </script>
+</body>
+</html>
