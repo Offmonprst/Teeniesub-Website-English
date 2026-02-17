@@ -33,7 +33,7 @@ closeSearch.addEventListener("click", () => {
     renderGallery(apiData?.gallery || []);
 });
 
-// ================= RENDER GALLERY =================
+// ================= RENDER GALLERY (UPDATED) =================
 function renderGallery(data) {
     if (!data || data.length === 0) {
         gallery.innerHTML = `<p class="center-text">Tidak ada episode</p>`;
@@ -42,16 +42,39 @@ function renderGallery(data) {
 
     let html = "";
     data.forEach(item => {
+        // 1. Get the Drive ID if a drive_url exists in your JSON
+        // If your JSON uses 'url' for the drive link, use item.url
+        const driveId = getDriveId(item.drive_url || ""); 
+
         html += `
-        <a href="https://eng.teeniesubs.xyz${item.url}" class="photo-card">
-            <img src="${item.image}" alt="Episodes ${item.episode}">
-            <h3>Eps: ${item.episode} || ${item.title}</h3>
-            <p>${item.series} ~ ${item.date}</p>
-        </a>
+        <div class="photo-card">
+            <a href="https://eng.teeniesubs.xyz${item.url}">
+                <img src="${item.image}" alt="Episodes ${item.episode}">
+            </a>
+            <div class="card-info">
+                <h3>Eps: ${item.episode} || ${item.title}</h3>
+                <p>${item.series} ~ ${item.date}</p>
+                
+                ${driveId ? `
+                <a href="download.html?id=${driveId}" class="download-btn-instant">
+                    <i class="fa-solid fa-download"></i> Download Video
+                </a>
+                ` : ''}
+            </div>
+        </div>
         `;
     });
 
     gallery.innerHTML = html;
+}
+
+/**
+ * HELPER FUNCTION: Extracts the ID from any Google Drive link
+ */
+function getDriveId(url) {
+    if (!url) return null;
+    const match = url.match(/\/d\/([a-zA-Z0-9_-]+)/) || url.match(/id=([a-zA-Z0-9_-]+)/);
+    return match ? match[1] : null;
 }
 
 // ================= SEARCH FILTER =================
