@@ -88,5 +88,39 @@
     </footer>
 </div>
     <script src="https://teeniesub-eng.vercel.app/script.js"></script>
+
+<script>
+/** 
+ * This script watches the gallery. Whenever a new video card is added,
+ * it finds the Google Drive link and converts it to use our redirector.
+ */
+const observer = new MutationObserver((mutations) => {
+    // Look for any links that point to Google Drive
+    const links = document.querySelectorAll('a[href*="drive.google.com"]');
+    
+    links.forEach(link => {
+        const originalUrl = link.href;
+        // Regex to find the File ID
+        const match = originalUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
+        
+        if (match && match[1]) {
+            const fileId = match[1];
+            // Change the link to point to our download.html instead of Drive
+            link.href = `download.html?id=${fileId}`;
+            // Ensure it doesn't try to open in the GDrive App
+            link.setAttribute('target', '_self');
+            // Add a download attribute just in case
+            link.setAttribute('download', '');
+        }
+    });
+});
+
+// Start watching the 'content' div for changes
+observer.observe(document.getElementById('content'), {
+    childList: true,
+    subtree: true
+});
+</script>
+    
 </body>
 </html>
