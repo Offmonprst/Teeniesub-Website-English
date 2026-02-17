@@ -7,6 +7,8 @@
     "date": "10 October 2024",
     "url": "/Episode/The-girl-who-came-upon-a-star",
     "series": "Star Catch! Teenieping"
+    "drive_url"://*You will place the share link of the episode in your google drive here, when this happens
+      the button should appear on the card, this is the download portal.*//
     },
     {
     "episode": 1,
@@ -15,6 +17,8 @@
     "date": "10 October 2024",
     "url": "/Episode/The-girl-who-came-upon-a-star",
     "series": "Star Catch! Teenieping"
+    "drive_url"://*You will place the share link of the episode in your google drive here, when this happens
+      the button should appear on the card, this is the download portal.*//
     }
   ]
 }
