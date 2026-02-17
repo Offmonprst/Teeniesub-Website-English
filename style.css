@@ -373,3 +373,37 @@ footer h2 {
 #content {
     display: none;
 }
+
+/* ================= DOWNLOAD BUTTON ================= */
+.download-wrapper {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.download-btn-instant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--blue-main);
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px; /* Matches her search input style */
+    font-weight: 600;
+    font-size: 13px;
+    transition: all .25s ease;
+    border: 2px solid white;
+    box-shadow: 0 4px 10px var(--blue-glow-soft);
+}
+
+.download-btn-instant:hover {
+    transform: scale(1.05);
+    background: #006AFF;
+    box-shadow: 0 6px 14px var(--blue-glow);
+}
+
+.download-btn-instant i {
+    font-size: 14px;
+}
