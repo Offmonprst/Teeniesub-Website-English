@@ -66,6 +66,7 @@ footer { animation-delay: .6s; }
 /* ================= HEADER ================= */
 header {
     background: var(--blue-main);
+    color: white;
     padding: 12px 18px;
     display: flex;
     justify-content: space-between;
