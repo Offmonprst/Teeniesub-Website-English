@@ -42,25 +42,12 @@ function renderGallery(data) {
 
     let html = "";
     data.forEach(item => {
-        // Extract Drive ID from the JSON (if she adds a drive_url field)
-        const driveId = getDriveId(item.drive_url || "");
-
         html += `
-        <div class="photo-card">
-            <a href="https://eng.teeniesubs.xyz${item.url}" style="text-decoration:none; color:inherit;">
-                <img src="${item.image}" alt="Episodes ${item.episode}">
-                <h3>Eps: ${item.episode} || ${item.title}</h3>
-                <p>${item.series} ~ ${item.date}</p>
-            </a>
-            
-            ${driveId ? `
-            <div class="download-wrapper">
-                <a href="download.html?id=${driveId}" class="download-btn-instant">
-                    <i class="fa-solid fa-cloud-arrow-down"></i> Download Video
-                </a>
-            </div>
-            ` : ''}
-        </div>
+        <a href="https://indo.teeniesubs.xyz${item.url}" class="photo-card">
+            <img src="${item.image}" alt="Episode ${item.episode}">
+            <h3>Eps: ${item.episode} || ${item.title}</h3>
+            <p>${item.series} ~ ${item.date}</p>
+        </a>
         `;
     });
 
